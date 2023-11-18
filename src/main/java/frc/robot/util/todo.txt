@@ -1,0 +1,1 @@
+recode Telemetry and DeviceFinder, done manually without any open source code

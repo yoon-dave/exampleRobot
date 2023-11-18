@@ -13,8 +13,8 @@ public class DrivetrainSubsystem extends SubsystemBase {
         }
         return instance;
     }
-    private static SwerveModule m_frontLeftModule;
-    private static SwerveModule m_frontRightModule;
-    private static SwerveModule m_backLeftModule;
-    private static SwerveModule m_backRightModule;
+    // private static SwerveModule m_frontLeftModule;
+    // private static SwerveModule m_frontRightModule;
+    // private static SwerveModule m_backLeftModule;
+    // private static SwerveModule m_backRightModule;
 }
