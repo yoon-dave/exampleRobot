@@ -1,5 +1,8 @@
 package frc.robot.subsystems;
 
+import frc.lib.drivers.TalonFXFactory;
+import frc.lib.drivers.LazyTalonFX;
+
 public class ShooterSubsystem {
     private static ShooterSubsystem instance = null;
     public static ShooterSubsystem getInstance() {
@@ -8,4 +11,7 @@ public class ShooterSubsystem {
         }
         return instance;
     }
+
+    
+
 }
