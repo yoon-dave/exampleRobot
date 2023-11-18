@@ -10,11 +10,10 @@ public class DrivetrainSubsystem extends SubsystemBase {
 
         if(instance == null){
             instance = new DrivetrainSubsystem();
-
         }
-
         return instance;
     }
+    
     private static SwerveModule m_frontLeftModule;
     private static SwerveModule m_frontRightModule;
     private static SwerveModule m_backLeftModule;

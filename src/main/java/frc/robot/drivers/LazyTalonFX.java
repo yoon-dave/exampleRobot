@@ -31,5 +31,5 @@ public class LazyTalonFX extends TalonFX {
     public void setControlMode(TalonFXControlMode mode){
         mControlMode = mode;
     }
-
+    
 }
