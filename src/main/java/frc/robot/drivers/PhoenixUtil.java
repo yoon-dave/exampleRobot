@@ -11,7 +11,7 @@ import com.ctre.phoenix.ErrorCode;
 import frc.robot.util.TelemetryUtil;
 import frc.robot.util.TelemetryUtil.PrintStyle;
 
-public class PheonixUtil {
+public class PhoenixUtil {
     public static void checkError(ErrorCode errorCode, String message, boolean log) {
         if (errorCode != ErrorCode.OK) {
             TelemetryUtil.print(message + " " + errorCode, PrintStyle.ERROR, log);
