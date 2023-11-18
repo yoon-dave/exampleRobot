@@ -6,7 +6,7 @@ package frc.robot.drivers;
 import com.ctre.phoenix.motorcontrol.can.TalonFX;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.TalonFXControlMode;
-/** Add your docs here. */
+
 public class LazyTalonFX extends TalonFX {
 
     private TalonFXControlMode mControlMode = null;
@@ -25,4 +25,11 @@ public class LazyTalonFX extends TalonFX {
     public void setMaster(LazyTalonFX master){
         mMaster = master;
     }
+    public LazyTalonFX getMaster(){
+        return mMaster;
+    }
+    public void setControlMode(TalonFXControlMode mode){
+        mControlMode = mode;
+    }
+
 }
