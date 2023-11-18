@@ -18,6 +18,6 @@ public class IndexerSubsystem extends SubsystemBase {
     }
 
     public IndexerSubsystem() {
-        
+        indexerMotor = TalonFXFactory.createDefaultFalcon();
     }
 }
