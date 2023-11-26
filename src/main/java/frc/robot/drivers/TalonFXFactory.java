@@ -94,7 +94,7 @@ public class TalonFXFactory {
         falcon.clearMotionProfileHasUnderrun();
         falcon.clearMotionProfileTrajectories();
 
-        PheonixUtil.checkError(falcon.configNeutralDeadband(config.NEUTRAL_DEADBAND, kTimeoutMs), name +
+        PhoenixUtil.checkError(falcon.configNeutralDeadband(config.NEUTRAL_DEADBAND, kTimeoutMs), name +
              " failed to configure neutral deadband on init", false);
         
         falcon.configNominalOutputForward(0.0);
@@ -108,62 +108,62 @@ public class TalonFXFactory {
 
         falcon.selectProfileSlot(0, 0);
 
-        PheonixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_1_General,
+        PhoenixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_1_General,
                 config.GENERAL_STATUS_FRAME_RATE_MS, kTimeoutMs), name + 
                 " failed to set general status frame rate on init", true);
         
-        PheonixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_2_Feedback0,
+        PhoenixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_2_Feedback0,
                 config.FEEDBACK_STATUS_FRAME_RATE_MS, kTimeoutMs), name + 
                 " failed to set feedback status frame rate on init", true);
 
-        PheonixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_3_Quadrature,
+        PhoenixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_3_Quadrature,
                 config.QUAD_ENCODER_STATUS_FRAME_RATE_MS, kTimeoutMs), name +
                 " failed to set quad encoder frame rate on init", false);
             
-        PheonixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_4_AinTempVbat,
+        PhoenixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_4_AinTempVbat,
                 config.ANALOG_TEMP_VBAT_STATUS_FRAME_RATE_MS, kTimeoutMs), name + 
                 " failed to set faults and temp update rate on init", false);
         
-        PheonixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_8_PulseWidth,
+        PhoenixUtil.checkError(falcon.setStatusFramePeriod(StatusFrameEnhanced.Status_8_PulseWidth,
                 config.PULSE_WIDTH_STATUS_FRAME_RATE_MS, kTimeoutMs), name + 
                 " failed to set pulse width status update rate on init", false);
 
-        PheonixUtil.checkError(falcon.setControlFramePeriod(ControlFrame.Control_3_General, config.CONTROL_FRAME_PERIOD_MS),
+        PhoenixUtil.checkError(falcon.setControlFramePeriod(ControlFrame.Control_3_General, config.CONTROL_FRAME_PERIOD_MS),
             name + " failed to set general control frame period on init", true);
 
-        PheonixUtil.checkError(falcon.configStatorCurrentLimit(config.OUTPUT_CURRENT_LIMIT, kTimeoutMs), name +
+        PhoenixUtil.checkError(falcon.configStatorCurrentLimit(config.OUTPUT_CURRENT_LIMIT, kTimeoutMs), name +
              " failed to set output current limit on init", true);
 
-        PheonixUtil.checkError(falcon.configSupplyCurrentLimit(config.INPUT_CURRENT_LIMIT, kTimeoutMs), name + 
+        PhoenixUtil.checkError(falcon.configSupplyCurrentLimit(config.INPUT_CURRENT_LIMIT, kTimeoutMs), name + 
              " failed to set input current limit on init", true);
-        PheonixUtil.checkError(falcon.configVelocityMeasurementPeriod(config.VELOCITY_MEASUREMENT_PERIOD, kTimeoutMs), name +
+        PhoenixUtil.checkError(falcon.configVelocityMeasurementPeriod(config.VELOCITY_MEASUREMENT_PERIOD, kTimeoutMs), name +
              " failed to set velocity meas. period on init", true);
 
-        PheonixUtil.checkError(falcon.configVelocityMeasurementWindow(config.VELOCITY_MEASUREMENT_ROLLING_WINDOW, kTimeoutMs), name +
+        PhoenixUtil.checkError(falcon.configVelocityMeasurementWindow(config.VELOCITY_MEASUREMENT_ROLLING_WINDOW, kTimeoutMs), name +
              " failed to set velocity measurement window on init", true);    
         
-        PheonixUtil.checkError(falcon.clearStickyFaults(), name + 
+        PhoenixUtil.checkError(falcon.clearStickyFaults(), name + 
              " failed to clear sticky faults on init", true);
 
         /*PheonixUtil.checkError(falcon.configSelectedFeedbackSensor(config.DEVICE, 0, kTimeoutMs),
             name + " failed to set feedback sensor on init", true);*/
 
-        PheonixUtil.checkError(falcon.configSelectedFeedbackCoefficient(config.SENSOR_FEEDBACK_COEFFECIENT, 0, kTimeoutMs),
+        PhoenixUtil.checkError(falcon.configSelectedFeedbackCoefficient(config.SENSOR_FEEDBACK_COEFFECIENT, 0, kTimeoutMs),
             name + " failed to set sensor coeffecient on init", true);
         
-        PheonixUtil.checkError(falcon.configOpenloopRamp(config.OPEN_LOOP_RAMP_RATE, kTimeoutMs), 
+        PhoenixUtil.checkError(falcon.configOpenloopRamp(config.OPEN_LOOP_RAMP_RATE, kTimeoutMs), 
             name + " failed to set open loop ramp rate on init", true);
         
-        PheonixUtil.checkError(falcon.configClosedloopRamp(config.CLOSED_LOOP_RAMP_RATE, kTimeoutMs), 
+        PhoenixUtil.checkError(falcon.configClosedloopRamp(config.CLOSED_LOOP_RAMP_RATE, kTimeoutMs), 
             name + " failed to set closed loop ramp rate on init", true);
         
-        PheonixUtil.checkError(falcon.configClosedloopRamp(config.CLOSED_LOOP_RAMP_RATE, kTimeoutMs), 
+        PhoenixUtil.checkError(falcon.configClosedloopRamp(config.CLOSED_LOOP_RAMP_RATE, kTimeoutMs), 
             name + " failed to set open loop ramp rate on init", true);
         
-        PheonixUtil.checkError(falcon.configForwardSoftLimitEnable(false, kTimeoutMs), 
+        PhoenixUtil.checkError(falcon.configForwardSoftLimitEnable(false, kTimeoutMs), 
             name + " failed to disable fwd soft limit", true);
         
-        PheonixUtil.checkError(falcon.configReverseSoftLimitEnable(false, kTimeoutMs), 
+        PhoenixUtil.checkError(falcon.configReverseSoftLimitEnable(false, kTimeoutMs), 
             name + " failed to disable reverse soft limit", true);
         
         falcon.setInverted(config.INVERTED);
