@@ -12,7 +12,7 @@ public class ShooterSubsystem {
         return instance;
     }
 
-    private final LazyTalonFX mLeaderShooter
+    private final LazyTalonFX mLeaderShooter;
     private final LazyTalonFX mFollowerShooter;
 
     public ShooterSubsystem() {
