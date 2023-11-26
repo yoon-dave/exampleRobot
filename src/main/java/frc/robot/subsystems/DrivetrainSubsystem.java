@@ -4,6 +4,8 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import frc.robot.subsystems.SwerveModule;
 import edu.wpi.first.wpilibj.smartdashboard.Field2d;
+import edu.wpi.first.math.controller.SimpleMotorFeedforward;
+import edu.wpi.first.math.kinematics.SwerveDriveOdometry;
 
 public class DrivetrainSubsystem extends SubsystemBase {
     private static DrivetrainSubsystem instance = null;
@@ -15,6 +17,10 @@ public class DrivetrainSubsystem extends SubsystemBase {
         }
         return instance;
     }
+
+    private final SwerveDriveOdometry m_swerveDriveOdometry;
+    private final SimpleMotorFeedforward m_feedForward;
+
     private static SwerveModule m_frontLeftModule;
     private static SwerveModule m_frontRightModule;
     private static SwerveModule m_backLeftModule;
