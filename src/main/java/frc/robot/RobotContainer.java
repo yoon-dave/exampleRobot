@@ -3,8 +3,8 @@
 // the WPILib BSD license file in the root directory of this project.
 package frc.robot;
 
-import frc.robot.util.Controller;
-import frc.robot.util.DeviceFinder;
+import frc.lib.util.Controller;
+import frc.lib.util.DeviceFinder;
 import frc.robot.commands.*;
 import frc.robot.subsystems.DrivetrainSubsystem;
 import frc.robot.subsystems.IndexerSubsystem;

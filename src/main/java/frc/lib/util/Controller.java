@@ -1,4 +1,4 @@
-package frc.robot.util;
+package frc.lib.util;
 
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.button.Button;
@@ -9,7 +9,7 @@ public class Controller {
     private XboxController xbox;
     private static final byte DPAD_U_PORT = -1;
     private static final byte DPAD_D_PORT = -3;
-    private static final byte DPAD_L_PORT = -4;
+    private static final byte DPAD_L_PORT = -4; 
     private static final byte DPAD_R_PORT = -2;
     private Button a, b, x, y, rb, lb, lstick, rstick, back, start;
     private POVButton up, down, left, right;

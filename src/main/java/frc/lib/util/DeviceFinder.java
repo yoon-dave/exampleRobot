@@ -1,4 +1,4 @@
-package frc.robot.util;
+package frc.lib.util;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

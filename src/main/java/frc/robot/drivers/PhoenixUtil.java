@@ -4,12 +4,12 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-package frc.robot.drivers;
+package frc.lib.drivers;
 
-import com.ctre.phoenix.ErrorCode;
+import com.ctre.phoenix6.ErrorCode;
 
-import frc.robot.util.TelemetryUtil;
-import frc.robot.util.TelemetryUtil.PrintStyle;
+import frc.lib.util.TelemetryUtil;
+import frc.lib.util.TelemetryUtil.PrintStyle;
 
 public class PhoenixUtil {
     public static void checkError(ErrorCode errorCode, String message, boolean log) {

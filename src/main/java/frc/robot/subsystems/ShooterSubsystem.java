@@ -1,7 +1,7 @@
 package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.ControlMode;
-import frc.robot.drivers.TalonFXFactory;
-import frc.robot.drivers.LazyTalonFX;
+import frc.lib.drivers.TalonFXFactory;
+import frc.lib.drivers.LazyTalonFX;
 
 public class ShooterSubsystem {
     private static ShooterSubsystem instance = null;

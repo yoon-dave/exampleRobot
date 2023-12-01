@@ -2,8 +2,8 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.Ports;
-import frc.robot.drivers.LazyTalonFX;
-import frc.robot.drivers.TalonFXFactory;
+import frc.lib.drivers.LazyTalonFX;
+import frc.lib.drivers.TalonFXFactory;
 
 public class IndexerSubsystem extends SubsystemBase {
     //initializing the motors required
