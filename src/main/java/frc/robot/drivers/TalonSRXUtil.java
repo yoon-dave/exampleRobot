@@ -5,12 +5,12 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package frc.robot.drivers;
+package frc.lib.drivers;
 
 import com.ctre.phoenix.motorcontrol.StickyFaults;
 
-import frc.robot.util.TelemetryUtil;
-import frc.robot.util.TelemetryUtil.PrintStyle;
+import frc.lib.util.TelemetryUtil;
+import frc.lib.util.TelemetryUtil.PrintStyle;
 import frc.robot.Constants;
 
 /**

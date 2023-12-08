@@ -5,15 +5,15 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package frc.robot.drivers;
+package frc.lib.drivers;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.StatorCurrentLimitConfiguration;
 import com.ctre.phoenix.motorcontrol.StickyFaults;
 import com.ctre.phoenix.motorcontrol.SupplyCurrentLimitConfiguration;
 
-import frc.robot.util.TelemetryUtil;
-import frc.robot.util.TelemetryUtil.PrintStyle;
+import frc.lib.util.TelemetryUtil;
+import frc.lib.util.TelemetryUtil.PrintStyle;
 import frc.robot.Constants;
 
 /**
