@@ -18,7 +18,7 @@ public class ShooterSubsystem {
     public ShooterSubsystem() {
         mLeaderShooter = TalonFXFactory.createDefaultFalcon("Leader Shooter", 0);
         configureMotor(mLeaderShooter, false);
-        mFollowerShooter = TalonFXFactory.createSlaveFalcon("Folllower Shooter", 1, 0);
+        mFollowerShooter = TalonFXFactory.createSlaveFalcon("Follower Shooter", 1, 0);
         configureMotor(mFollowerShooter, false);
     }
     
